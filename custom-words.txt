@@ -95,6 +95,8 @@ undici
 vite
 vitejs
 wsrun
+lezer
+buildhelper
 
 // identifiers used in code and configs
 acmerc
