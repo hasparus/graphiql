@@ -6,7 +6,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "VS Code Extension: Run",
+      "name": "VS Code LSP Extension: Run",
       "type": "extensionHost",
       "request": "launch",
       "runtimeExecutable": "${execPath}",
@@ -18,6 +18,20 @@
       ],
       "sourceMaps": true,
       "preLaunchTask": "watch-vscode"
+    },
+    {
+      "name": "VS Code Exec Extension: Run",
+      "type": "extensionHost",
+      "request": "launch",
+      "runtimeExecutable": "${execPath}",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/packages/vscode-graphql-execution"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/packages/vscode-graphql-execution/out/extension.js"
+      ],
+      "sourceMaps": true,
+      "preLaunchTask": "watch-vscode-exec"
     }
   ]
 }
